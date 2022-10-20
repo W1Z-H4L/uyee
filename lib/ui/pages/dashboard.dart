@@ -10,7 +10,7 @@ class Dashboard extends StatefulWidget {
   @override
   State<Dashboard> createState() => _DashboardState();
 }
-
+//schafold
 class _DashboardState extends State<Dashboard> {
   int index = 0;
   List<Widget> list = [Home(), Profile(), Settings()];

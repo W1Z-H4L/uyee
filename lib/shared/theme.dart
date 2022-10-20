@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 double defaultMargin = 30.0;
-
+//tampilan
 Color whiteColor = const Color(0xFFFFFFFF);
 Color blackColor = const Color(0xFF14193F);
 Color greyColor = const Color(0xFFA4A8AE);
