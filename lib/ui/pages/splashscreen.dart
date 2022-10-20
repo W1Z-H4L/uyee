@@ -14,7 +14,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     Timer(
-      const Duration(seconds: 3),
+      const Duration(seconds: 5),
       () => Navigator.pushNamed(context, '/sign-in'),
     );
     super.initState();
@@ -37,6 +37,9 @@ class _SplashPageState extends State<SplashPage> {
             'Tunggu Beberapa Saat \n sedang memuat konten',
             style: blackTextStyle,
           ),
+          const SizedBox(
+            height: 10,
+          )
         ],
       ),
     );
@@ -47,11 +50,12 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       body: Center(
         child: Container(
+          margin: EdgeInsets.only(top: defaultMargin),
           width: 130,
           height: 150,
           decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/splashscreen.png'),
+                image: AssetImage('assets/logo.png'),
               ),
               gradient: LinearGradient(
                 colors: [Color(0xffBDE2E7), Color(0xffFFFFFF)],

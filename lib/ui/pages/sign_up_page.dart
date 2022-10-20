@@ -27,7 +27,7 @@ class SignInPage extends StatelessWidget {
             ),
           ),
           Text(
-            'Login \n Masuk Aplikasi',
+            'Register \n Daftar Aplikasi',
             style: blackTextStyle.copyWith(
               fontWeight: semiBold,
             ),
@@ -62,11 +62,19 @@ class SignInPage extends StatelessWidget {
                 const CustomFormField(
                   title: 'Password',
                   obscureText: true,
-                  
-                
                 ),
                 const SizedBox(
                   height: 8,
+                ),
+                const CustomFormField(
+                  title: 'Email',
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                // NOTE: INPUT PASSWORD
+                const CustomFormField(
+                  title: 'No Telepon',
                 ),
                 Align(
                   alignment: Alignment.centerRight,
@@ -81,9 +89,9 @@ class SignInPage extends StatelessWidget {
                   height: 30,
                 ),
                 CustomFilledButton(
-                  title: 'Login',
+                  title: 'Daftar',
                   onPressed: () {
-                    Navigator.pushNamed(context, '/home');
+                    Navigator.pushNamed(context, '/sign-in');
                   },
                 ),
               ],
@@ -91,12 +99,6 @@ class SignInPage extends StatelessWidget {
           ),
           const SizedBox(
             height: 50,
-          ),
-          CustomTextButton(
-            title: 'Register',
-            onPressed: () {
-              Navigator.pushNamed(context, '/sign-up');
-            },
           ),
         ],
       ),
