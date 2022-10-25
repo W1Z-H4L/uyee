@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:login/shared/theme.dart';
 import 'package:login/ui/widgets/buttons.dart';
@@ -51,7 +53,7 @@ class SignInPage extends StatelessWidget {
           Container(
             width: 196,
             height: 177,
-            margin: const EdgeInsets.only(top: 5, bottom: 55),
+            // margin: const EdgeInsets.only(top: 5, bottom: 55),
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/petanilogin.png'),
@@ -62,11 +64,11 @@ class SignInPage extends StatelessWidget {
             height: 5,
           ),
           Container(
-            padding: const EdgeInsets.all(22),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(0),
-              color: Colors.white,
-            ),
+            // padding: const EdgeInsets.all(22),
+            // decoration: BoxDecoration(
+            //   borderRadius: BorderRadius.circular(0),
+            //   color: Colors.white,
+            // ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -87,7 +89,7 @@ class SignInPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 16,
+                  height: 30,
                 ),
                 // NOTE: INPUT PASSWORD
                 TextFormField(
@@ -131,7 +133,7 @@ class SignInPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 90,
                 ),
                 CustomFilledButton(
                   title: 'Login',
@@ -145,12 +147,12 @@ class SignInPage extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          CustomTextButton(
-            title: 'Register',
-            onPressed: () {
-              Navigator.pushNamed(context, '/sign-up');
-            },
-          ),
+          // CustomTextButton(
+          //   title: 'Register',
+          //   onPressed: () {
+          //     Navigator.pushNamed(context, '/sign-up');
+          //   },
+          // ),
         ],
       ),
     );
