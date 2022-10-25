@@ -11,6 +11,7 @@ class Dashboard extends StatefulWidget {
   State<Dashboard> createState() => _DashboardState();
 }
 
+//schafold
 class _DashboardState extends State<Dashboard> {
   int index = 0;
   List<Widget> list = [Home(), Profile(), Settings()];
@@ -38,6 +39,7 @@ class _DashboardState extends State<Dashboard> {
   }
 }
 
+//schafold
 class MyDrawer extends StatelessWidget {
   final Function onTap;
   MyDrawer({required this.onTap});

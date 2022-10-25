@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 double defaultMargin = 30.0;
-
+//tampilan
 Color whiteColor = const Color(0xFFFFFFFF);
 Color blackColor = const Color(0xFF14193F);
 Color greyColor = const Color(0xFFA4A8AE);
@@ -28,17 +28,18 @@ TextStyle subtitleTextStyle =
     GoogleFonts.montserrat(color: subtitleColor, fontSize: 14);
 TextStyle blackTextStyle =
     GoogleFonts.montserrat(color: blackColor, fontSize: 24);
-TextStyle whiteTextStyle = GoogleFonts.poppins(
+TextStyle whiteTextStyle = GoogleFonts.montserrat(
   color: whiteColor,
 );
-TextStyle greyTextStyle = GoogleFonts.poppins(
+TextStyle greyTextStyle = GoogleFonts.montserrat(
   color: greyColor,
 );
-TextStyle lightBlueTextStyle = GoogleFonts.poppins(
+TextStyle lightBlueTextStyle = GoogleFonts.montserrat(
   color: lightBlueColor,
 );
-TextStyle greenTextStyle = GoogleFonts.poppins(color: greenColor, fontSize: 14);
-TextStyle karen = GoogleFonts.poppins(
+TextStyle greenTextStyle =
+    GoogleFonts.montserrat(color: greenColor, fontSize: 14);
+TextStyle karen = GoogleFonts.montserrat(
   color: whiteColor,
 );
 TextStyle greenTextStyle2 =
@@ -47,6 +48,8 @@ TextStyle blackTextStyle2 =
     GoogleFonts.montserrat(color: Colors.black, fontSize: 14);
 TextStyle greenTextStyle3 =
     GoogleFonts.montserrat(color: subtitleColor2, fontSize: 15);
+TextStyle greenTextStyle1 =
+    GoogleFonts.montserrat(color: subtitleColor2, fontSize: 24);
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;
