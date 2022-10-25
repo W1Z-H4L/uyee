@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(
-      const Duration(seconds: 11),
+      const Duration(seconds: 7),
       () => Navigator.pushNamed(context, '/sign-in'),
     );
     super.initState();
@@ -50,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             Text(
-              "\n Sedang memuat fitur mohon tunggu sebentar ... \n \n",
+              "\n Sedang Memuat Fitur \n Mohon Tunggu Sebentar ... \n \n",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: subtitleColor2,
