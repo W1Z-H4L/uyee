@@ -8,7 +8,20 @@ class SignInPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool _obscureText = true;
     return Scaffold(
+      // appBar: AppBar(
+      //   brightness: Brightness.dark,
+      //   backgroundColor: Colors.transparent,
+      //   elevation: 0,
+      //   flexibleSpace: Container(
+      //       decoration: BoxDecoration(
+      //     image: DecorationImage(
+      //       image: AssetImage('assets/logo.png'),
+      //     ),
+      //   )),
+      // ),
+
       body: ListView(
         padding: const EdgeInsets.only(
           left: 24,
@@ -19,7 +32,7 @@ class SignInPage extends StatelessWidget {
           Container(
             width: 121,
             height: 121,
-            margin: const EdgeInsets.only(top: 50, bottom: 50),
+            margin: const EdgeInsets.only(top: 50),
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/logo.png'),
@@ -27,43 +40,83 @@ class SignInPage extends StatelessWidget {
             ),
           ),
           Text(
-            'Login \n Masuk Aplikasi',
-            style: blackTextStyle.copyWith(
+            'WELCOME !!',
+            textAlign: TextAlign.center,
+            style: greenTextStyle2.copyWith(
               fontWeight: semiBold,
+              fontSize: 20,
+              color: subtitleColor2,
+            ),
+          ),
+          Container(
+            width: 196,
+            height: 177,
+            margin: const EdgeInsets.only(top: 5, bottom: 55),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/petanilogin.png'),
+              ),
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 5,
           ),
           Container(
             padding: const EdgeInsets.all(22),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(
-                colors: [
-                  Color.fromARGB(255, 255, 255, 255),
-                  Color.fromARGB(255, 0, 0, 0)
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
+              borderRadius: BorderRadius.circular(0),
+              color: Colors.white,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 // NOTE: INPUT EMAIL
-                const CustomFormField(
-                  title: 'Ussername',
+                TextFormField(
+                  showCursor: true,
+                  cursorHeight: 25,
+                  style: blackTextStyle2,
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: subtitleColor2)),
+                    labelText: 'Ussername',
+                    hintText: 'Masukan Ussername Anda',
+                    hintStyle: subtitleTextStyle,
+                    labelStyle: greenTextStyle3,
+                    focusColor: subtitleColor2,
+                    fillColor: subtitleColor2,
+                  ),
                 ),
                 const SizedBox(
                   height: 16,
                 ),
                 // NOTE: INPUT PASSWORD
-                const CustomFormField(
-                  title: 'Password',
-                  obscureText: true,
-                  
-                
+                TextFormField(
+                  showCursor: true,
+                  cursorHeight: 25,
+                  style: blackTextStyle2,
+                  obscureText: _obscureText,
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: subtitleColor2)),
+                    suffixIcon: IconButton(
+                      icon: Icon(Icons.visibility, color: subtitleColor),
+                      onPressed: () {
+                        setState() {
+                          _obscureText = false;
+                          Icon(
+                            Icons.visibility_off,
+                            color: subtitleColor,
+                          );
+                        }
+                      },
+                    ),
+                    labelText: 'Password',
+                    hintText: 'Masukan Password Anda',
+                    hintStyle: subtitleTextStyle,
+                    labelStyle: greenTextStyle3,
+                    focusColor: subtitleColor2,
+                    fillColor: subtitleColor2,
+                  ),
                 ),
                 const SizedBox(
                   height: 8,

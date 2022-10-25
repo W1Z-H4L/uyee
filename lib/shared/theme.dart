@@ -22,7 +22,10 @@ Color backgroundColor3 = const Color(0xff242231);
 Color primaryTextColor = const Color(0xfff1f0f2);
 Color secondaryTextColor = const Color(0xff999999);
 Color subtitleColor = const Color(0xff504F5E);
+Color subtitleColor2 = const Color(0xff006B6C);
 
+TextStyle subtitleTextStyle =
+    GoogleFonts.montserrat(color: subtitleColor, fontSize: 14);
 TextStyle blackTextStyle =
     GoogleFonts.montserrat(color: blackColor, fontSize: 24);
 TextStyle whiteTextStyle = GoogleFonts.poppins(
@@ -38,6 +41,12 @@ TextStyle greenTextStyle = GoogleFonts.poppins(color: greenColor, fontSize: 14);
 TextStyle karen = GoogleFonts.poppins(
   color: whiteColor,
 );
+TextStyle greenTextStyle2 =
+    GoogleFonts.montserrat(color: subtitleColor2, fontSize: 24);
+TextStyle blackTextStyle2 =
+    GoogleFonts.montserrat(color: Colors.black, fontSize: 14);
+TextStyle greenTextStyle3 =
+    GoogleFonts.montserrat(color: subtitleColor2, fontSize: 15);
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;
