@@ -50,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             Text(
-              "\n Sedang memuat fitur mohon tunggu sebentar ... \n \n",
+              "\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: subtitleColor2,

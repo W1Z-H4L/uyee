@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
     return Container(
       child: Center(
         child: Text(
-          "Home",
+          "Dashboard",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
         ),
       ),

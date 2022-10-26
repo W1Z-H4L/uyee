@@ -50,6 +50,8 @@ TextStyle greenTextStyle3 =
     GoogleFonts.montserrat(color: subtitleColor2, fontSize: 15);
 TextStyle greenTextStyle1 =
     GoogleFonts.montserrat(color: subtitleColor2, fontSize: 24);
+TextStyle blackTextStyle1 = GoogleFonts.montserrat(
+    color: whiteColor, fontSize: 20, fontWeight: FontWeight.w700);
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;

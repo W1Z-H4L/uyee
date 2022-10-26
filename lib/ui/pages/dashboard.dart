@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login/page/home.dart';
 import 'package:login/page/profile.dart';
 import 'package:login/page/settings.dart';
+import 'package:login/shared/theme.dart';
 import 'package:login/ui/pages/sign_in_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -18,24 +19,53 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Navigation Drawer"),
-          shadowColor: Color.fromARGB(255, 47, 101, 88),
-          backgroundColor: Color.fromARGB(255, 47, 101, 88),
-        ),
-        body: list[index],
-        drawer: MyDrawer(
-          onTap: (ctx, i) {
-            setState(() {
-              index = i;
-              Navigator.pop(ctx);
-            });
-          },
-        ),
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          appBar: AppBar(
+            brightness: Brightness.dark,
+            toolbarHeight: 141,
+            title: Text("HALLO!! \nSelamat Datang Di EdiFarm"),
+            titleTextStyle: blackTextStyle1,
+            titleSpacing: 20,
+            centerTitle: false,
+            leading: Image.asset('potoprofil.png'),
+            automaticallyImplyLeading: true,
+            shadowColor: Color.fromARGB(255, 47, 101, 88),
+            backgroundColor: Color.fromARGB(255, 47, 101, 88),
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(50),
+                  bottomRight: Radius.circular(50),
+                ),
+                image: DecorationImage(
+                  image: AssetImage(
+                    'assets/gambar1.png',
+                  ),
+                  alignment: Alignment.centerRight,
+                ),
+              ),
+              // body: list[index],
+              // drawer: MyDrawer(
+              //   onTap: (ctx, i) {
+              //     setState(() {
+              //       index = i;
+              //       Navigator.pop(ctx);
+              //     });
+              //   },
+              // ),
+            ),
+          ),
+          body: list[index],
+          drawer: MyDrawer(
+            onTap: (ctx, i) {
+              setState(() {
+                index = i;
+                Navigator.pop(ctx);
+              });
+            },
+          ),
+        ));
   }
 }
 
