@@ -39,9 +39,7 @@ TextStyle lightBlueTextStyle = GoogleFonts.montserrat(
 );
 TextStyle greenTextStyle =
     GoogleFonts.montserrat(color: greenColor, fontSize: 14);
-TextStyle karen = GoogleFonts.montserrat(
-  color: whiteColor,
-);
+TextStyle karen = GoogleFonts.montserrat(color: whiteColor, fontSize: 12);
 TextStyle greenTextStyle2 =
     GoogleFonts.montserrat(color: subtitleColor2, fontSize: 24);
 TextStyle blackTextStyle2 =

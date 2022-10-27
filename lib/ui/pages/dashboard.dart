@@ -28,7 +28,7 @@ class _DashboardState extends State<Dashboard> {
             titleTextStyle: blackTextStyle1,
             titleSpacing: 20,
             centerTitle: false,
-            leading: Image.asset('potoprofil.png'),
+            // leading: Image.asset('potoprofil.png'),
             automaticallyImplyLeading: true,
             shadowColor: Color.fromARGB(255, 47, 101, 88),
             backgroundColor: Color.fromARGB(255, 47, 101, 88),
@@ -56,7 +56,6 @@ class _DashboardState extends State<Dashboard> {
               // ),
             ),
           ),
-          body: list[index],
           drawer: MyDrawer(
             onTap: (ctx, i) {
               setState(() {
@@ -65,6 +64,7 @@ class _DashboardState extends State<Dashboard> {
               });
             },
           ),
+          body: list[index],
         ));
   }
 }
