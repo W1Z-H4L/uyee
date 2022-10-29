@@ -24,7 +24,9 @@ class _DashboardState extends State<Dashboard> {
           appBar: AppBar(
             brightness: Brightness.dark,
             toolbarHeight: 141,
-            title: Text("HALLO!! \nSelamat Datang Di EdiFarm"),
+            title: Text(
+              "HALLO!! \n Selamat Datang Di EdiFarm",
+            ),
             titleTextStyle: blackTextStyle1,
             titleSpacing: 20,
             centerTitle: false,
