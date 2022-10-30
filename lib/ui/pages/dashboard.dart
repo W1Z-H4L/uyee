@@ -42,7 +42,7 @@ class _DashboardState extends State<Dashboard> {
                 ),
                 image: DecorationImage(
                   image: AssetImage(
-                    'assets/gambar1.png',
+                    'assets/potoprofil.png',
                   ),
                   alignment: Alignment.centerRight,
                 ),

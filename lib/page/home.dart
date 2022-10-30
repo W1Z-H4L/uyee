@@ -43,6 +43,9 @@ class Home extends StatelessWidget {
                       borderRadius: BorderRadius.circular(40),
                       child: Image.asset('assets/icon_Schedule.png'),
                     ),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Text(
                       'Schedule',
                       style: karen,
@@ -71,6 +74,9 @@ class Home extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: Image.asset('assets/icon_activity.png'),
+                    ),
+                    SizedBox(
+                      height: 5,
                     ),
                     Text(
                       'Activity',
@@ -101,6 +107,9 @@ class Home extends StatelessWidget {
                       borderRadius: BorderRadius.circular(40),
                       child: Image.asset('assets/icon_padicare.png'),
                     ),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Text(
                       'Padi Care',
                       style: karen,
@@ -129,6 +138,9 @@ class Home extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: Image.asset('assets/icon_varietedpadi.png'),
+                    ),
+                    SizedBox(
+                      height: 5,
                     ),
                     Text(
                       'Varietas Padi',
