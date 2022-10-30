@@ -10,6 +10,20 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.all(25),
         crossAxisCount: 2,
         children: <Widget>[
+          Container(
+            alignment: Alignment.center,
+            margin: const EdgeInsets.only(
+              top: 5,
+            ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/gambarcuaca.png'),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 15,
+          ),
           Card(
             elevation: 30,
             shape:
