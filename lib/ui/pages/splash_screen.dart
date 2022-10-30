@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:html';
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -45,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
               style: greenTextStyle4,
             ),
             Text(
-              "\n Sedang memuat fitur mohon tunggu sebentar ... \n \n",
+              "\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: subtitleColor2,
