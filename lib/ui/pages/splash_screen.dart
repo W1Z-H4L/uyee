@@ -42,12 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Text(
               "PROSES\n",
               textAlign: TextAlign.center,
-              style: TextStyle(
-                color: subtitleColor2,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Montserrat',
-                fontSize: 24,
-              ),
+              style: greenTextStyle4,
             ),
             Text(
               "\n Sedang memuat fitur mohon tunggu sebentar ... \n \n",
