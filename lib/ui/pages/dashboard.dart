@@ -21,43 +21,43 @@ class _DashboardState extends State<Dashboard> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          appBar: AppBar(
-            brightness: Brightness.dark,
-            toolbarHeight: 141,
-            title: Text(
-              "HALLO!! \n Selamat Datang Di EdiFarm",
-            ),
-            titleTextStyle: blackTextStyle1,
-            titleSpacing: 20,
-            centerTitle: false,
-            // leading: Image.asset('potoprofil.png'),
-            automaticallyImplyLeading: true,
-            shadowColor: Color.fromARGB(255, 47, 101, 88),
-            backgroundColor: Color.fromARGB(255, 47, 101, 88),
-            flexibleSpace: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(50),
-                  bottomRight: Radius.circular(50),
-                ),
-                image: DecorationImage(
-                  image: AssetImage(
-                    'assets/potoprofil.png',
-                  ),
-                  alignment: Alignment.centerRight,
-                ),
-              ),
-              // body: list[index],
-              // drawer: MyDrawer(
-              //   onTap: (ctx, i) {
-              //     setState(() {
-              //       index = i;
-              //       Navigator.pop(ctx);
-              //     });
-              //   },
-              // ),
-            ),
-          ),
+          // appBar: AppBar(
+          //   brightness: Brightness.dark,
+          //   toolbarHeight: 141,
+          //   title: Text(
+          //     "HALLO!! \n Selamat Datang Di EdiFarm",
+          //   ),
+          //   titleTextStyle: blackTextStyle1,
+          //   titleSpacing: 20,
+          //   centerTitle: false,
+          //   // leading: Image.asset('potoprofil.png'),
+          //   automaticallyImplyLeading: true,
+          //   shadowColor: Color.fromARGB(255, 47, 101, 88),
+          //   backgroundColor: Color.fromARGB(255, 47, 101, 88),
+          //   flexibleSpace: Container(
+          //     decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.only(
+          //         bottomLeft: Radius.circular(50),
+          //         bottomRight: Radius.circular(50),
+          //       ),
+          //       image: DecorationImage(
+          //         image: AssetImage(
+          //           'assets/potoprofil.png',
+          //         ),
+          //         alignment: Alignment.centerRight,
+          //       ),
+          //     ),
+          //     // body: list[index],
+          //     // drawer: MyDrawer(
+          //     //   onTap: (ctx, i) {
+          //     //     setState(() {
+          //     //       index = i;
+          //     //       Navigator.pop(ctx);
+          //     //     });
+          //     //   },
+          //     // ),
+          //   ),
+          // ),
           drawer: MyDrawer(
             onTap: (ctx, i) {
               setState(() {
@@ -77,6 +77,7 @@ class MyDrawer extends StatelessWidget {
   MyDrawer({required this.onTap});
   @override
   Widget build(BuildContext context) {
+    final color = subtitleColor2;
     return SizedBox(
       width: MediaQuery.of(context).size.width * 0.8,
       child: Drawer(
@@ -84,8 +85,7 @@ class MyDrawer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             DrawerHeader(
-              decoration:
-                  BoxDecoration(color: Color.fromARGB(255, 47, 101, 88)),
+              decoration: BoxDecoration(color: subtitleColor2),
               child: Padding(
                 padding: EdgeInsets.all(6),
                 child: Column(
