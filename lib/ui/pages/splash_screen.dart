@@ -25,36 +25,34 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        margin: const EdgeInsets.only(top: 50),
         decoration: BoxDecoration(color: Colors.white),
         alignment: Alignment.center,
         child: Column(
           children: [
             Image.asset(
-              'assets/icon_spash.png',
+              'assets/icon_splash.png',
               height: 250.0,
               width: 250.0,
             ),
             SizedBox(
-              height: 5,
+              height: 10,
             ),
             Text(
               "PROSES\n",
               textAlign: TextAlign.center,
               style: greenTextStyle4,
             ),
-            Text(
-              "\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: subtitleColor2,
-                fontFamily: 'Montserrat',
-                fontSize: 13,
-              ),
-            ),
             SizedBox(
-              height: 10,
+              height: 30,
+            ),
+            Text("\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
+                textAlign: TextAlign.center, style: greenTextStyle5),
+            SizedBox(
+              height: 40,
             ),
             LinearPercentIndicator(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 20),
               animation: true,
               animationDuration: 7500,
               lineHeight: 22,
