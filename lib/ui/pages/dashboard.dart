@@ -25,7 +25,7 @@ class _DashboardState extends State<Dashboard> {
         title: Text(
           "HALLO!! \n Selamat Datang Di EdiFarm",
         ),
-        titleTextStyle: blackTextStyle1,
+        titleTextStyle: whiteTextStyle,
         titleSpacing: 20,
         centerTitle: false,
         leading: Image.asset(
@@ -74,23 +74,29 @@ class _DashboardState extends State<Dashboard> {
               height: 15,
             ),
             Card(
-              elevation: 30,
+              elevation: 60,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40)),
               color: subtitleColor2,
               child: InkWell(
                 onTap: () {},
-                splashColor: greenColor,
-                highlightColor: greenColor,
-                hoverColor: greenColor,
+                splashColor: splashcolor,
+                highlightColor: splashcolor,
+                hoverColor: splashcolor,
                 borderRadius: BorderRadius.circular(40),
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Image.asset('assets/gambar_schedule.png'),
+                        // borderRadius: BorderRadius.circular(40),
+                        child: Image.asset(
+                          'assets/gambar_schedule.png',
+                          cacheHeight: 70,
+                          cacheWidth: 70,
+                          height: 70,
+                          width: 70,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -103,26 +109,32 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
               ),
-              margin: EdgeInsets.only(left: 35, right: 35, top: 25, bottom: 25),
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
             ),
             Card(
-              elevation: 30,
+              elevation: 60,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40)),
               color: subtitleColor2,
               child: InkWell(
                 onTap: () {},
-                splashColor: greenColor,
-                highlightColor: greenColor,
-                hoverColor: greenColor,
+                splashColor: splashcolor,
+                highlightColor: splashcolor,
+                hoverColor: splashcolor,
                 borderRadius: BorderRadius.circular(40),
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Image.asset('assets/gambar_activity.png'),
+                        // borderRadius: BorderRadius.circular(40),
+                        child: Image.asset(
+                          'assets/gambar_activity.png',
+                          cacheHeight: 70,
+                          cacheWidth: 70,
+                          height: 70,
+                          width: 70,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -135,26 +147,32 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
               ),
-              margin: EdgeInsets.only(left: 35, right: 35, top: 25, bottom: 25),
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
             ),
             Card(
-              elevation: 30,
+              elevation: 60,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40)),
               color: subtitleColor2,
               child: InkWell(
                 onTap: () {},
-                splashColor: greenColor,
-                highlightColor: greenColor,
-                hoverColor: greenColor,
+                splashColor: splashcolor,
+                highlightColor: splashcolor,
+                hoverColor: splashcolor,
                 borderRadius: BorderRadius.circular(40),
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Image.asset('assets/gambar_padicare.png'),
+                        // borderRadius: BorderRadius.circular(40),
+                        child: Image.asset(
+                          'assets/gambar_padicare.png',
+                          cacheHeight: 70,
+                          cacheWidth: 70,
+                          height: 70,
+                          width: 70,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -167,18 +185,18 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
               ),
-              margin: EdgeInsets.only(left: 35, right: 35, top: 25, bottom: 25),
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
             ),
             Card(
-              elevation: 30,
+              elevation: 60,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40)),
               color: subtitleColor2,
               child: InkWell(
                 onTap: () {},
-                splashColor: greenColor,
-                highlightColor: greenColor,
-                hoverColor: greenColor,
+                splashColor: splashcolor,
+                highlightColor: splashcolor,
+                hoverColor: splashcolor,
                 borderRadius: BorderRadius.circular(40),
                 child: Center(
                   // height: 110,
@@ -187,8 +205,14 @@ class _DashboardState extends State<Dashboard> {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Image.asset('assets/gambar_variety.png'),
+                        // borderRadius: BorderRadius.circular(40),
+                        child: Image.asset(
+                          'assets/gambar_variety.png',
+                          cacheHeight: 70,
+                          cacheWidth: 70,
+                          height: 70,
+                          width: 70,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -201,26 +225,32 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
               ),
-              margin: EdgeInsets.only(left: 35, right: 35, top: 25, bottom: 25),
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
             ),
             Card(
-              elevation: 30,
+              elevation: 60,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40)),
               color: subtitleColor2,
               child: InkWell(
                 onTap: () {},
-                splashColor: greenColor,
-                highlightColor: greenColor,
-                hoverColor: greenColor,
+                splashColor: splashcolor,
+                highlightColor: splashcolor,
+                hoverColor: splashcolor,
                 borderRadius: BorderRadius.circular(40),
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Image.asset('assets/gambar_history.png'),
+                        // borderRadius: BorderRadius.circular(40),
+                        child: Image.asset(
+                          'assets/gambar_history.png',
+                          cacheHeight: 70,
+                          cacheWidth: 70,
+                          height: 70,
+                          width: 70,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -233,27 +263,33 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
               ),
-              margin: EdgeInsets.only(left: 35, right: 35, top: 25, bottom: 25),
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
             ),
             Card(
-              elevation: 30,
+              elevation: 120,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40)),
               color: subtitleColor2,
               child: InkWell(
                 onTap: () {},
-                splashColor: greenColor,
-                highlightColor: greenColor,
-                hoverColor: greenColor,
+                splashColor: splashcolor,
+                highlightColor: splashcolor,
+                hoverColor: splashcolor,
                 borderRadius: BorderRadius.circular(40),
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
-                      Opacity(opacity: 0.8),
+                      // Opacity(opacity: 0.8),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Image.asset('assets/gambar_acount.png'),
+                        // borderRadius: BorderRadius.circular(40),
+                        child: Image.asset(
+                          'assets/gambar_acount.png',
+                          cacheHeight: 70,
+                          cacheWidth: 70,
+                          height: 70,
+                          width: 70,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -266,7 +302,7 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
               ),
-              margin: EdgeInsets.only(left: 35, right: 35, top: 25, bottom: 25),
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
             ),
           ]),
     );

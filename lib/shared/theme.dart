@@ -23,6 +23,7 @@ Color primaryTextColor = const Color(0xfff1f0f2);
 Color secondaryTextColor = const Color(0xff999999);
 Color subtitleColor = const Color(0xff504F5E);
 Color subtitleColor2 = const Color(0xff006B6C);
+Color splashcolor = const Color(0xff549E9E);
 
 TextStyle subtitleTextStyle =
     GoogleFonts.montserrat(color: subtitleColor, fontSize: 14);
@@ -31,8 +32,7 @@ TextStyle blackTextStyle =
 TextStyle blackTextStyle1 =
     GoogleFonts.montserrat(color: blackColor, fontSize: 20);
 TextStyle whiteTextStyle = GoogleFonts.montserrat(
-  color: whiteColor,
-);
+    color: whiteColor, fontSize: 20, fontWeight: FontWeight.bold);
 TextStyle greyTextStyle = GoogleFonts.montserrat(
   color: greyColor,
 );

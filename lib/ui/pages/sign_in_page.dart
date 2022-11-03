@@ -6,8 +6,10 @@ import 'package:login/ui/widgets/buttons.dart';
 import 'package:login/ui/widgets/forms.dart';
 
 class SignInPage extends StatelessWidget {
-  const SignInPage({Key? key}) : super(key: key);
-
+  // const SignInPage({Key? key}) : super(key: key);
+  bool _isObsecure3 = true;
+  bool visible = false;
+  final TextEditingController passwordController = new TextEditingController();
   @override
   Widget build(BuildContext context) {
     bool _obscureText = true;
@@ -93,23 +95,25 @@ class SignInPage extends StatelessWidget {
                 ),
                 // NOTE: INPUT PASSWORD
                 TextFormField(
+                  controller: passwordController,
                   showCursor: true,
                   cursorHeight: 25,
                   style: blackTextStyle2,
-                  obscureText: _obscureText,
+                  obscureText: _isObsecure3,
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: subtitleColor2)),
                     suffixIcon: IconButton(
-                      icon: Icon(Icons.visibility, color: subtitleColor),
+                      icon: Icon(
+                        _isObsecure3 ? Icons.visibility : Icons.visibility_off,
+                        color: subtitleColor2,
+                      ),
                       onPressed: () {
                         setState() {
-                          _obscureText = false;
-                          Icon(
-                            Icons.visibility_off,
-                            color: subtitleColor,
-                          );
+                          _isObsecure3 = !_isObsecure3;
                         }
+
+                        ;
                       },
                     ),
                     labelText: 'Password',
