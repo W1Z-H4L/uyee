@@ -112,8 +112,6 @@ class SignInPage extends StatelessWidget {
                         setState() {
                           _isObsecure3 = !_isObsecure3;
                         }
-
-                        ;
                       },
                     ),
                     labelText: 'Password',
