@@ -51,31 +51,44 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final top = coverHeight - profileHeight / 2;
-    return Column(
-      children: <Widget>[
-        Stack(
-          clipBehavior: Clip.none,
-          alignment: Alignment.center,
-          children: <Widget>[
-            Image.asset(
-              height: coverHeight,
-              width: double.infinity,
-              fit: BoxFit.cover,
-              color: Color.fromARGB(199, 0, 106, 108),
-              colorBlendMode: BlendMode.modulate,
-              'assets/backgroun_profil.png',
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(0, 0, 106, 108),
+          leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
             ),
-            Positioned(
+            onPressed: () {},
+          ),
+        ),
+        body: Column(children: <Widget>[
+          Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.center,
+            children: <Widget>[
+              Image.asset(
+                height: coverHeight,
+                width: double.infinity,
+                fit: BoxFit.cover,
+                color: Color.fromARGB(199, 0, 106, 108),
+                colorBlendMode: BlendMode.modulate,
+                'assets/backgroun_profil.png',
+              ),
+              Positioned(
                 top: top,
                 child: CircleAvatar(
                   radius: profileHeight / 2,
                   backgroundColor: whiteColor,
+
                   child: Image.asset(
                     'assets/potoprofil.png',
                     height: 144,
                     fit: BoxFit.fitHeight,
                   ),
-                  backgroundImage: AssetImage('assets/gambar_lingkaran.png'),
+                  backgroundImage: AssetImage(
+                    'assets/gambar_lingkaran.png',
+                  ),
 
                   // child: Image.asset(
                   //   'assets/potoprofil.png',
@@ -86,14 +99,66 @@ class Profile extends StatelessWidget {
                   //     'assets/potoprofil.png',
                   //   )),
                   // )))
-                ))
-          ],
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        Container()
-      ],
-    );
+                ),
+              ),
+              Positioned(
+                  bottom: 0,
+                  right: 100,
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        width: 4,
+                        color: Theme.of(context).scaffoldBackgroundColor,
+                      ),
+                      color: subtitleColor2,
+                    ),
+                    child: Icon(
+                      Icons.edit,
+                      color: Colors.white,
+                    ),
+                  ))
+            ],
+          ),
+          SizedBox(
+            height: 160,
+          ),
+          Text(
+            'Aditiya Gilang',
+            textAlign: TextAlign.center,
+            style: greenTextStyle2.copyWith(
+              fontWeight: semiBold,
+              fontSize: 20,
+              color: subtitleColor2,
+            ),
+          ),
+          Text(
+            'Aditiya',
+            textAlign: TextAlign.center,
+            style: greenTextStyle2.copyWith(
+              fontSize: 12,
+              color: subtitleColor2,
+            ),
+          ),
+          Text(
+            'Semangat Bertani Yah Gais ;)',
+            textAlign: TextAlign.center,
+            style: greenTextStyle2.copyWith(
+              fontSize: 12,
+              color: Colors.black,
+            ),
+          ),
+          Text(
+            'Account Info',
+            textAlign: TextAlign.start,
+            style: greenTextStyle2.copyWith(
+              fontSize: 16,
+              color: subtitleColor2,
+            ),
+          ),
+          TextField()
+        ]));
   }
 }
