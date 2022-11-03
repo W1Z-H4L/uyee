@@ -22,7 +22,6 @@ class _ActivityState extends State<Activity> {
         ),
         titleTextStyle: whiteTextStyle1,
         titleSpacing: 20,
-        centerTitle: false,
         shadowColor: Color.fromARGB(255, 47, 101, 88),
         backgroundColor: Color.fromARGB(255, 47, 101, 88),
         flexibleSpace: Container(
@@ -34,6 +33,12 @@ class _ActivityState extends State<Activity> {
           ),
         ),
       ),
+      body: Container(
+          child: Center(
+              child: Text(
+        "KASI TANGGAL TAPI NTAR AJA",
+        style: greenTextStyle1,
+      ))),
     );
   }
 }
