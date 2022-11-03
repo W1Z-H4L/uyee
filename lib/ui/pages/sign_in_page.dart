@@ -58,7 +58,7 @@ class SignInPage extends StatelessWidget {
             // margin: const EdgeInsets.only(top: 5, bottom: 55),
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/petanilogin.png'),
+                image: AssetImage('assets/gambar_login.png'),
               ),
             ),
           ),
