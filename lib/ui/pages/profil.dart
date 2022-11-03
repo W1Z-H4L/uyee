@@ -155,10 +155,35 @@ class Profile extends StatelessWidget {
             textAlign: TextAlign.start,
             style: greenTextStyle2.copyWith(
               fontSize: 16,
+              fontWeight: bold,
               color: subtitleColor2,
             ),
           ),
-          TextField()
+          SizedBox(
+            height: 100,
+          ),
+          TextFormField(
+            showCursor: true,
+            cursorHeight: 25,
+            style: blackTextStyle2,
+            decoration: InputDecoration(
+              focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: subtitleColor2)),
+              suffixIcon: IconButton(
+                icon: Icon(
+                  Icons.edit_sharp,
+                  color: subtitleColor2,
+                ),
+                onPressed: () {},
+              ),
+              labelText: 'Nama',
+              hintText: 'Aditiya Gilang',
+              hintStyle: subtitleTextStyle,
+              labelStyle: greenTextStyle3,
+              focusColor: subtitleColor2,
+              fillColor: subtitleColor2,
+            ),
+          )
         ]));
   }
 }

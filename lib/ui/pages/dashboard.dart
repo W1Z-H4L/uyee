@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/shared/theme.dart';
+import 'package:login/ui/pages/activity.dart';
 import 'package:login/ui/pages/profil.dart';
 import 'package:login/ui/pages/sign_in_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -114,7 +115,10 @@ class _DashboardState extends State<Dashboard> {
                   borderRadius: BorderRadius.circular(40)),
               color: subtitleColor2,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Activity()));
+                },
                 splashColor: splashcolor,
                 highlightColor: splashcolor,
                 hoverColor: splashcolor,
