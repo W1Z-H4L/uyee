@@ -23,8 +23,8 @@ class _DashboardState extends State<Dashboard> {
         title: Text(
           "HALLO!! \n Selamat Datang Di EdiFarm",
         ),
-        titleTextStyle: whiteTextStyle,
-        titleSpacing: 20,
+        titleTextStyle: whiteTextStyle3,
+        titleSpacing: 14,
         centerTitle: false,
         leading: Image.asset(
             width: 3, 'assets/potoprofil.png', alignment: Alignment.centerLeft),
