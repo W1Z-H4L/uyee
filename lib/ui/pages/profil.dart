@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/shared/theme.dart';
+import 'package:login/ui/widgets/buttons.dart';
 
 // class Profile extends StatefulWidget {
 //   @override
@@ -53,7 +54,7 @@ class Profile extends StatelessWidget {
     final top = coverHeight - profileHeight / 2;
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(0, 0, 106, 108),
+          backgroundColor: Color.fromARGB(199, 0, 106, 108),
           leading: IconButton(
             icon: Icon(
               Icons.arrow_back,
@@ -62,7 +63,7 @@ class Profile extends StatelessWidget {
             onPressed: () {},
           ),
         ),
-        body: Column(children: <Widget>[
+        body: ListView(children: <Widget>[
           Stack(
             clipBehavior: Clip.none,
             alignment: Alignment.center,
@@ -71,7 +72,7 @@ class Profile extends StatelessWidget {
                 height: coverHeight,
                 width: double.infinity,
                 fit: BoxFit.cover,
-                color: Color.fromARGB(199, 0, 106, 108),
+                color: Color.fromARGB(154, 0, 106, 108),
                 colorBlendMode: BlendMode.modulate,
                 'assets/backgroun_profil.png',
               ),
@@ -102,8 +103,8 @@ class Profile extends StatelessWidget {
                 ),
               ),
               Positioned(
-                  bottom: 0,
-                  right: 100,
+                  bottom: 20,
+                  right: 170,
                   child: Container(
                     height: 40,
                     width: 40,
@@ -115,21 +116,24 @@ class Profile extends StatelessWidget {
                       ),
                       color: subtitleColor2,
                     ),
-                    child: Icon(
-                      Icons.edit,
-                      color: Colors.white,
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.edit_sharp,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {},
                     ),
                   ))
             ],
           ),
           SizedBox(
-            height: 160,
+            height: 80,
           ),
           Text(
             'Aditiya Gilang',
             textAlign: TextAlign.center,
             style: greenTextStyle2.copyWith(
-              fontWeight: semiBold,
+              fontWeight: extraBold,
               fontSize: 20,
               color: subtitleColor2,
             ),
@@ -150,40 +154,126 @@ class Profile extends StatelessWidget {
               color: Colors.black,
             ),
           ),
-          Text(
-            'Account Info',
-            textAlign: TextAlign.start,
-            style: greenTextStyle2.copyWith(
-              fontSize: 16,
-              fontWeight: bold,
-              color: subtitleColor2,
-            ),
-          ),
-          SizedBox(
-            height: 100,
-          ),
-          TextFormField(
-            showCursor: true,
-            cursorHeight: 25,
-            style: blackTextStyle2,
-            decoration: InputDecoration(
-              focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: subtitleColor2)),
-              suffixIcon: IconButton(
-                icon: Icon(
-                  Icons.edit_sharp,
+          Container(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 5),
+              child: Text(
+                'Account Info',
+                textAlign: TextAlign.start,
+                style: greenTextStyle2.copyWith(
+                  fontSize: 18,
+                  fontWeight: extraBold,
                   color: subtitleColor2,
                 ),
-                onPressed: () {},
+              )),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 5),
+              child: TextFormField(
+                showCursor: true,
+                cursorHeight: 20,
+                style: blackTextStyle2,
+                decoration: InputDecoration(
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      Icons.edit_sharp,
+                      color: subtitleColor2,
+                    ),
+                    onPressed: () {},
+                  ),
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                  labelText: 'Nama',
+                  hintText: 'Aditiya Gilang',
+                  hintStyle: subtitleTextStyle,
+                  labelStyle: greenTextStyle3,
+                  focusColor: subtitleColor2,
+                  fillColor: subtitleColor2,
+                ),
+              )),
+          SizedBox(
+            height: 3,
+          ),
+          Container(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 5),
+              child: TextFormField(
+                showCursor: true,
+                cursorHeight: 25,
+                style: blackTextStyle2,
+                decoration: InputDecoration(
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      Icons.edit_sharp,
+                      color: subtitleColor2,
+                    ),
+                    onPressed: () {},
+                  ),
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                  labelText: 'Alamat',
+                  hintText: 'Jombang',
+                  hintStyle: subtitleTextStyle,
+                  labelStyle: greenTextStyle3,
+                  focusColor: subtitleColor2,
+                  fillColor: subtitleColor2,
+                ),
+              )),
+          SizedBox(
+            height: 3,
+          ),
+          Container(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 5),
+              child: TextFormField(
+                enabled: false,
+                showCursor: true,
+                cursorHeight: 25,
+                style: blackTextStyle2,
+                decoration: InputDecoration(
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                  labelText: 'Tanggal Lahir',
+                  hintText: '21 November 2003',
+                  hintStyle: subtitleTextStyle,
+                  labelStyle: greenTextStyle3,
+                  focusColor: subtitleColor2,
+                  fillColor: subtitleColor2,
+                ),
+              )),
+          SizedBox(
+            height: 3,
+          ),
+          Container(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 5),
+              child: TextFormField(
+                enabled: false,
+                showCursor: true,
+                cursorHeight: 25,
+                style: blackTextStyle2,
+                decoration: InputDecoration(
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                  labelText: 'Jenis Kelamin',
+                  hintText: 'Laki - Laki',
+                  hintStyle: subtitleTextStyle,
+                  labelStyle: greenTextStyle3,
+                  focusColor: subtitleColor2,
+                  fillColor: subtitleColor2,
+                ),
+              )),
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+              // height: 30,
+              // width: 150,
+              padding: EdgeInsets.only(
+                left: 90,
+                right: 90,
+                bottom: 50,
               ),
-              labelText: 'Nama',
-              hintText: 'Aditiya Gilang',
-              hintStyle: subtitleTextStyle,
-              labelStyle: greenTextStyle3,
-              focusColor: subtitleColor2,
-              fillColor: subtitleColor2,
-            ),
-          )
+              child: CustomFilledButton(
+                height: 30,
+                width: 150,
+                title: 'Save',
+                onPressed: () {},
+              ))
         ]));
   }
 }
