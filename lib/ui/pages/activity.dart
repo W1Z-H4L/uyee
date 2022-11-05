@@ -16,9 +16,10 @@ class _ActivityState extends State<Activity> {
     return Scaffold(
       appBar: AppBar(
         brightness: Brightness.dark,
-        toolbarHeight: 141,
+        toolbarHeight: 70,
         title: Text(
           "Activity",
+          textAlign: TextAlign.center,
         ),
         titleTextStyle: whiteTextStyle1,
         titleSpacing: 20,
