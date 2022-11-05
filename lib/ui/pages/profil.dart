@@ -102,28 +102,28 @@ class Profile extends StatelessWidget {
                   // )))
                 ),
               ),
-              Positioned(
-                  bottom: 20,
-                  right: 170,
-                  child: Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        width: 4,
-                        color: Theme.of(context).scaffoldBackgroundColor,
-                      ),
-                      color: subtitleColor2,
-                    ),
-                    child: IconButton(
-                      icon: Icon(
-                        Icons.edit_sharp,
-                        color: Colors.white,
-                      ),
-                      onPressed: () {},
-                    ),
-                  ))
+              // Positioned(
+              //     bottom: 20,
+              //     right: 170,
+              //     child: Container(
+              //       height: 40,
+              //       width: 40,
+              //       decoration: BoxDecoration(
+              //         shape: BoxShape.circle,
+              //         border: Border.all(
+              //           width: 4,
+              //           color: Theme.of(context).scaffoldBackgroundColor,
+              //         ),
+              //         color: subtitleColor2,
+              //       ),
+              //       child: IconButton(
+              //         icon: Icon(
+              //           Icons.edit_sharp,
+              //           color: Colors.white,
+              //         ),
+              //         onPressed: () {},
+              //       ),
+              //     ))
             ],
           ),
           SizedBox(
