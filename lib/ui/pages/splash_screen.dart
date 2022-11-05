@@ -25,18 +25,22 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(20),
+        width: double.infinity,
+        height: double.infinity,
         decoration: BoxDecoration(color: Colors.white),
         alignment: Alignment.center,
         child: Column(
           children: [
+            SizedBox(
+              height: 150,
+            ),
             Image.asset(
               'assets/icon_splash.png',
               height: 250.0,
               width: 250.0,
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Text(
               "PROSES\n",
@@ -44,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
               style: greenTextStyle4,
             ),
             SizedBox(
-              height: 30,
+              height: 60,
             ),
             Text("\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
                 textAlign: TextAlign.center, style: greenTextStyle5),
