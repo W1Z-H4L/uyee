@@ -33,6 +33,8 @@ TextStyle blackTextStyle1 =
     GoogleFonts.montserrat(color: blackColor, fontSize: 20);
 TextStyle whiteTextStyle = GoogleFonts.montserrat(
     color: whiteColor, fontSize: 20, fontWeight: FontWeight.bold);
+TextStyle whiteTextStyle3 = GoogleFonts.montserrat(
+    color: whiteColor, fontSize: 15, fontWeight: FontWeight.bold);
 TextStyle greyTextStyle = GoogleFonts.montserrat(
   color: greyColor,
 );
