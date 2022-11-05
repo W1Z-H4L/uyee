@@ -24,51 +24,57 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.center,
+                end: Alignment.bottomCenter,
+                colors: [
+              subtitleColor2,
+              whiteColor,
+            ])),
         padding: const EdgeInsets.all(25),
-        children: <Widget>[
-          Column(
-            children: [
-              Image.asset(
-                'assets/icon_splash.png',
-                height: 250.0,
-                width: 250.0,
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                "PROSES\n",
-                textAlign: TextAlign.center,
-                style: greenTextStyle4,
-              ),
-              SizedBox(
-                height: 60,
-              ),
-              Text("\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
-                  textAlign: TextAlign.center, style: greenTextStyle5),
-              SizedBox(
-                height: 40,
-              ),
-              LinearPercentIndicator(
-                padding: EdgeInsets.only(left: 45, right: 45, bottom: 20),
-                animation: true,
-                animationDuration: 7500,
-                lineHeight: 22,
-                percent: 1.0,
-                progressColor: subtitleColor2,
-                backgroundColor: Color.fromARGB(255, 157, 210, 219),
-              ),
-              // Container(
-              //     height: 30,
-              //     padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-              //     child: ElevatedButton(
-              //       child: const Text('Next'),
-              //       onPressed: () {},
-              //     )),
-            ],
-          ),
-        ],
+        child: Column(
+          children: [
+            Image.asset(
+              'assets/icon_splash.png',
+              height: 250.0,
+              width: 250.0,
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+              "PROSES\n",
+              textAlign: TextAlign.center,
+              style: whiteTextStyle6,
+            ),
+            SizedBox(
+              height: 45,
+            ),
+            Text("\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
+                textAlign: TextAlign.center, style: greenTextStyle5),
+            SizedBox(
+              height: 25,
+            ),
+            LinearPercentIndicator(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 20),
+              animation: true,
+              animationDuration: 7500,
+              lineHeight: 22,
+              percent: 1.0,
+              progressColor: subtitleColor2,
+              backgroundColor: Color.fromARGB(255, 157, 210, 219),
+            ),
+            // Container(
+            //     height: 30,
+            //     padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+            //     child: ElevatedButton(
+            //       child: const Text('Next'),
+            //       onPressed: () {},
+            //     )),
+          ],
+        ),
       ),
     );
   }
