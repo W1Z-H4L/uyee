@@ -31,9 +31,6 @@ class _SplashScreenState extends State<SplashScreen> {
         alignment: Alignment.center,
         child: Column(
           children: [
-            SizedBox(
-              height: 150,
-            ),
             Image.asset(
               'assets/icon_splash.png',
               height: 250.0,
