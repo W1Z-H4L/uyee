@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:login/ui/pages/activity.dart';
 import 'package:login/ui/pages/dashboard.dart';
 import 'package:login/ui/pages/navbar_key.dart';
-import 'package:login/ui/pages/profil.dart';
+import 'package:login/ui/pages/setting/page/profil/profil.dart';
 
 class navBar extends StatefulWidget {
   @override

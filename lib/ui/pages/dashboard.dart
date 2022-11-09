@@ -2,7 +2,8 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:login/shared/theme.dart';
 import 'package:login/ui/pages/activity.dart';
-import 'package:login/ui/pages/profil.dart';
+import 'package:login/ui/pages/setting/page/profil/profil.dart';
+import 'package:login/ui/pages/setting/pengaturan.dart';
 import 'package:login/ui/pages/sign_in_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -101,7 +102,7 @@ class _DashboardState extends State<Dashboard> {
                         height: 5,
                       ),
                       Text(
-                        'Schedule',
+                        'Jadwal',
                         style: karen,
                       )
                     ],
@@ -142,7 +143,7 @@ class _DashboardState extends State<Dashboard> {
                         height: 5,
                       ),
                       Text(
-                        'Activity',
+                        'Aktivitas',
                         style: karen,
                       )
                     ],
@@ -180,7 +181,7 @@ class _DashboardState extends State<Dashboard> {
                         height: 5,
                       ),
                       Text(
-                        'Padi Care',
+                        'Diagnosa',
                         style: karen,
                       )
                     ],
@@ -220,7 +221,7 @@ class _DashboardState extends State<Dashboard> {
                         height: 5,
                       ),
                       Text(
-                        'Varietas Padi',
+                        'Jenis Padi',
                         style: karen,
                       )
                     ],
@@ -258,7 +259,7 @@ class _DashboardState extends State<Dashboard> {
                         height: 5,
                       ),
                       Text(
-                        'History',
+                        'Riwayat',
                         style: karen,
                       )
                     ],
@@ -275,7 +276,7 @@ class _DashboardState extends State<Dashboard> {
               child: InkWell(
                 onTap: () => {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Profile()))
+                      MaterialPageRoute(builder: (context) => Pengaturan()))
                 },
                 splashColor: splashcolor,
                 highlightColor: splashcolor,
@@ -300,7 +301,7 @@ class _DashboardState extends State<Dashboard> {
                         height: 5,
                       ),
                       Text(
-                        'Acount',
+                        'Pengaturan',
                         style: karen,
                       )
                     ],

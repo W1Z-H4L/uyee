@@ -54,13 +54,24 @@ class Profile extends StatelessWidget {
     final top = coverHeight - profileHeight / 2;
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(199, 0, 106, 108),
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.white,
+          brightness: Brightness.dark,
+          toolbarHeight: 70,
+          title: Text(
+            "Edit Profil",
+            textAlign: TextAlign.center,
+          ),
+          centerTitle: true,
+          titleTextStyle: whiteTextStyle1,
+          titleSpacing: 20,
+          shadowColor: Color.fromARGB(255, 47, 101, 88),
+          backgroundColor: Color.fromARGB(255, 47, 101, 88),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(50),
+                bottomRight: Radius.circular(50),
+              ),
             ),
-            onPressed: () {},
           ),
         ),
         body: ListView(children: <Widget>[
@@ -157,7 +168,7 @@ class Profile extends StatelessWidget {
           Container(
               padding: EdgeInsets.only(left: 45, right: 45, bottom: 5),
               child: Text(
-                'Account Info',
+                'Edit Biodata',
                 textAlign: TextAlign.start,
                 style: greenTextStyle2.copyWith(
                   fontSize: 18,
@@ -211,6 +222,32 @@ class Profile extends StatelessWidget {
                   floatingLabelBehavior: FloatingLabelBehavior.always,
                   labelText: 'Alamat',
                   hintText: 'Jombang',
+                  hintStyle: subtitleTextStyle,
+                  labelStyle: greenTextStyle3,
+                  focusColor: subtitleColor2,
+                  fillColor: subtitleColor2,
+                ),
+              )),
+          SizedBox(
+            height: 3,
+          ),
+          Container(
+              padding: EdgeInsets.only(left: 45, right: 45, bottom: 5),
+              child: TextFormField(
+                showCursor: true,
+                cursorHeight: 20,
+                style: blackTextStyle2,
+                decoration: InputDecoration(
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      Icons.edit_sharp,
+                      color: subtitleColor2,
+                    ),
+                    onPressed: () {},
+                  ),
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                  labelText: 'Nomer Telepon',
+                  hintText: '082232937743',
                   hintStyle: subtitleTextStyle,
                   labelStyle: greenTextStyle3,
                   focusColor: subtitleColor2,
