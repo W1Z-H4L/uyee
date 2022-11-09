@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(
-      const Duration(seconds: 11),
+      const Duration(seconds: 10),
       () => Navigator.pushNamed(context, '/sign-in'),
     );
     super.initState();
@@ -24,53 +24,68 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(color: Colors.white),
-        alignment: Alignment.center,
-        child: Column(
-          children: [
-            Image.asset(
+      body: ListView(
+        children: <Widget>[
+          Container(
+            margin: const EdgeInsets.only(top: 50),
+            padding: const EdgeInsets.all(25),
+            width: 250,
+            height: 250,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(
               'assets/icon_splash.png',
-              height: 250.0,
-              width: 250.0,
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
-              "PROSES\n",
-              textAlign: TextAlign.center,
-              style: greenTextStyle4,
-            ),
-            SizedBox(
-              height: 60,
-            ),
-            Text("\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
-                textAlign: TextAlign.center, style: greenTextStyle5),
-            SizedBox(
-              height: 40,
-            ),
-            LinearPercentIndicator(
-              padding: EdgeInsets.only(left: 45, right: 45, bottom: 20),
-              animation: true,
-              animationDuration: 7500,
-              lineHeight: 22,
-              percent: 1.0,
-              progressColor: subtitleColor2,
-              backgroundColor: Color.fromARGB(255, 157, 210, 219),
-            ),
-            // Container(
-            //     height: 30,
-            //     padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-            //     child: ElevatedButton(
-            //       child: const Text('Next'),
-            //       onPressed: () {},
-            //     )),
-          ],
-        ),
+            ))),
+          ),
+          SizedBox(
+            height: 15,
+          ),
+
+          //   children: <Widget>[
+          // Container(
+          //   width: 121,
+          //   height: 121,
+          //   margin: const EdgeInsets.only(top: 50),
+          //   decoration: const BoxDecoration(
+          //     image: DecorationImage(
+          //       image: AssetImage('assets/logo.png'),
+          //     ),
+          //   ),
+          // ),
+
+          Text(
+            "PROSES\n",
+            textAlign: TextAlign.center,
+            style: greenTextStyle4,
+          ),
+          SizedBox(
+            height: 25,
+          ),
+          Text("\n Sedang Memuat fitur \n Mohon Tunggu Sebentar ... \n \n",
+              textAlign: TextAlign.center, style: greenTextStyle5),
+
+          SizedBox(
+            height: 25,
+          ),
+          LinearPercentIndicator(
+            padding: EdgeInsets.only(left: 45, right: 45, bottom: 20),
+            animation: true,
+            animationDuration: 7500,
+            lineHeight: 22,
+            percent: 1.0,
+            progressColor: subtitleColor2,
+            backgroundColor: Color.fromARGB(255, 157, 210, 219),
+          ),
+          // Container(
+          //     height: 30,
+          //     padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+          //     child: ElevatedButton(
+          //       child: const Text('Next'),
+          //       onPressed: () {},
+          //     )),
+        ],
       ),
     );
   }
 }
+///
