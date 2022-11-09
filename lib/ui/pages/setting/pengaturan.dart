@@ -156,34 +156,49 @@ class _Pengaturan extends State<Pengaturan> {
               height: 6,
             ),
             Container(
+              padding: EdgeInsets.only(
+                left: 45,
+                right: 45,
+              ),
+              child: Container(
+                  decoration:
+                      const BoxDecoration(color: Colors.black, boxShadow: [
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 3.0,
+                      offset: Offset(0, 3),
+                    ),
+                    BoxShadow(
+                      color: Colors.black,
+                      offset: Offset(2, 0),
+                    ),
+                    BoxShadow(
+                      color: Colors.black,
+                      offset: Offset(0, 2),
+                    ),
+                  ]),
+                  child: ButtonSetting(
+                      title: 'Edit Profil',
+                      height: 44,
+                      width: 277,
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/edit-pro');
+                      })),
+            ),
+            Container(
+                // height: 30,
+                // width: 150,
                 padding: EdgeInsets.only(
-                  left: 45,
-                  right: 45,
+                  left: 90,
+                  right: 90,
+                  bottom: 50,
                 ),
-                child: Container(
-                    decoration:
-                        const BoxDecoration(color: Colors.black, boxShadow: [
-                      BoxShadow(
-                        color: Colors.black,
-                        blurRadius: 3.0,
-                        offset: Offset(0, 3),
-                      ),
-                      BoxShadow(
-                        color: Colors.black,
-                        offset: Offset(2, 0),
-                      ),
-                      BoxShadow(
-                        color: Colors.black,
-                        offset: Offset(0, 2),
-                      ),
-                    ]),
-                    child: ButtonSetting(
-                        title: 'Edit Profil',
-                        height: 44,
-                        width: 277,
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/edit-pro');
-                        }))),
+                child: CustomFilledButton(
+                  height: 30,
+                  width: 150,
+                  title: 'Logout',
+                  onPressed: () {},
+                ))
           ],
         ));
   }
