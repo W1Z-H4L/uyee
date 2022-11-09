@@ -21,6 +21,7 @@ class _ActivityState extends State<Activity> {
           "Activity",
           textAlign: TextAlign.center,
         ),
+        centerTitle: true,
         titleTextStyle: whiteTextStyle1,
         titleSpacing: 20,
         shadowColor: Color.fromARGB(255, 47, 101, 88),
