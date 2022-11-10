@@ -56,18 +56,18 @@ class _Pengaturan extends State<Pengaturan> {
                 padding: EdgeInsets.only(left: 45, right: 45, bottom: 6),
                 child: Container(
                     decoration:
-                        const BoxDecoration(color: Colors.black, boxShadow: [
+                        const BoxDecoration(color: Colors.grey, boxShadow: [
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         blurRadius: 3.0,
                         offset: Offset(0, 3),
                       ),
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         offset: Offset(2, 0),
                       ),
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         offset: Offset(0, 2),
                       ),
                     ]),
@@ -88,18 +88,18 @@ class _Pengaturan extends State<Pengaturan> {
                 ),
                 child: Container(
                     decoration:
-                        const BoxDecoration(color: Colors.black, boxShadow: [
+                        const BoxDecoration(color: Colors.grey, boxShadow: [
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         blurRadius: 3.0,
                         offset: Offset(0, 3),
                       ),
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         offset: Offset(2, 0),
                       ),
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         offset: Offset(0, 2),
                       ),
                     ]),
@@ -130,18 +130,18 @@ class _Pengaturan extends State<Pengaturan> {
                 padding: EdgeInsets.only(left: 45, right: 45, bottom: 6),
                 child: Container(
                     decoration:
-                        const BoxDecoration(color: Colors.black, boxShadow: [
+                        const BoxDecoration(color: Colors.grey, boxShadow: [
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         blurRadius: 3.0,
                         offset: Offset(0, 3),
                       ),
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         offset: Offset(2, 0),
                       ),
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.grey,
                         offset: Offset(0, 2),
                       ),
                     ]),
@@ -162,18 +162,18 @@ class _Pengaturan extends State<Pengaturan> {
               ),
               child: Container(
                   decoration:
-                      const BoxDecoration(color: Colors.black, boxShadow: [
+                      const BoxDecoration(color: Colors.grey, boxShadow: [
                     BoxShadow(
-                      color: Colors.black,
+                      color: Colors.grey,
                       blurRadius: 3.0,
                       offset: Offset(0, 3),
                     ),
                     BoxShadow(
-                      color: Colors.black,
+                      color: Colors.grey,
                       offset: Offset(2, 0),
                     ),
                     BoxShadow(
-                      color: Colors.black,
+                      color: Colors.grey,
                       offset: Offset(0, 2),
                     ),
                   ]),
@@ -184,6 +184,9 @@ class _Pengaturan extends State<Pengaturan> {
                       onPressed: () {
                         Navigator.pushNamed(context, '/edit-pro');
                       })),
+            ),
+            SizedBox(
+              height: 45,
             ),
             Container(
                 // height: 30,

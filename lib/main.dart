@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login/ui/pages/dashboard.dart';
+import 'package:login/ui/pages/home/dashboard.dart';
 import 'package:login/ui/pages/setting/page/account/edit_password.dart';
 import 'package:login/ui/pages/setting/page/account/edit_username.dart';
 import 'package:login/ui/pages/setting/page/profil/edit_profil.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/sign-in': (context) => SignInPage(),
-        '/home': (context) => Dashboard(),
+        '/home': (context) => const Dashboard(),
         '/edit-bio': (context) => Profile(),
         '/edit-pro': (context) => EditProfil(),
         '/edit-user': (context) => EditUsername(),
