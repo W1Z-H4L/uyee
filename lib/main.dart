@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/ui/pages/home/dashboard.dart';
+import 'package:login/ui/pages/riwayat/togglebar.dart';
 import 'package:login/ui/pages/setting/page/account/edit_password.dart';
 import 'package:login/ui/pages/setting/page/account/edit_username.dart';
 import 'package:login/ui/pages/setting/page/profil/edit_profil.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/edit-user': (context) => EditUsername(),
         '/edit-pass': (context) => EditPassword(),
         '/pengaturan': (context) => Pengaturan(),
+        '/riwayat': (context) => Riwayat(),
       },
     );
   }

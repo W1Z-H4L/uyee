@@ -4,6 +4,7 @@ import 'package:login/shared/theme.dart';
 import 'package:login/ui/pages/activity.dart';
 import 'package:login/ui/pages/home/navbar.dart';
 import 'package:login/ui/pages/home/navbar.dart';
+import 'package:login/ui/pages/riwayat/togglebar.dart';
 import 'package:login/ui/pages/setting/page/profil/profil.dart';
 import 'package:login/ui/pages/setting/pengaturan.dart';
 import 'package:login/ui/pages/sign_in_page.dart';
@@ -259,7 +260,10 @@ class _DashboardState extends State<Dashboard> {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
             color: subtitleColor2,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Riwayat()));
+              },
               splashColor: splashcolor,
               highlightColor: splashcolor,
               hoverColor: splashcolor,
@@ -335,37 +339,37 @@ class _DashboardState extends State<Dashboard> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-          iconSize: 30,
-          selectedFontSize: 0,
-          unselectedFontSize: 0,
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: Colors.white,
-          onTap: onTap,
-          currentIndex: currentTab,
-          selectedItemColor: subtitleColor2,
-          unselectedItemColor: subtitleColor2,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          elevation: 0,
-          items: const [
-            BottomNavigationBarItem(
-                label: "Dashboard",
-                icon: Icon(
-                  Icons.dashboard_outlined,
-                ),
-                activeIcon: Icon(
-                  Icons.dashboard_rounded,
-                )),
-            BottomNavigationBarItem(
-                label: "Aktivitas",
-                icon: Icon(Icons.local_activity_outlined),
-                activeIcon: Icon(Icons.local_activity)),
-            BottomNavigationBarItem(
-                label: "Akun",
-                icon: Icon(Icons.manage_accounts_outlined),
-                activeIcon: Icon(Icons.manage_accounts)),
-          ]),
+      // bottomNavigationBar: BottomNavigationBar(
+      //     iconSize: 30,
+      //     selectedFontSize: 0,
+      //     unselectedFontSize: 0,
+      //     type: BottomNavigationBarType.fixed,
+      //     backgroundColor: Colors.white,
+      //     onTap: onTap,
+      //     currentIndex: currentTab,
+      //     selectedItemColor: subtitleColor2,
+      //     unselectedItemColor: subtitleColor2,
+      //     showSelectedLabels: false,
+      //     showUnselectedLabels: false,
+      //     elevation: 0,
+      //     items: const [
+      //       BottomNavigationBarItem(
+      //           label: "Dashboard",
+      //           icon: Icon(
+      //             Icons.dashboard_outlined,
+      //           ),
+      //           activeIcon: Icon(
+      //             Icons.dashboard_rounded,
+      //           )),
+      //       BottomNavigationBarItem(
+      //           label: "Aktivitas",
+      //           icon: Icon(Icons.local_activity_outlined),
+      //           activeIcon: Icon(Icons.local_activity)),
+      //       BottomNavigationBarItem(
+      //           label: "Akun",
+      //           icon: Icon(Icons.manage_accounts_outlined),
+      //           activeIcon: Icon(Icons.manage_accounts)),
+      //     ]),
     );
   }
 }

@@ -24,6 +24,7 @@ Color secondaryTextColor = const Color(0xff999999);
 Color subtitleColor = const Color(0xff504F5E);
 Color subtitleColor2 = const Color(0xff006B6C);
 Color splashcolor = const Color(0xff549E9E);
+Color calmgreen = const Color(0xffCCE1E2);
 
 TextStyle subtitleTextStyle =
     GoogleFonts.montserrat(color: subtitleColor, fontSize: 14);
