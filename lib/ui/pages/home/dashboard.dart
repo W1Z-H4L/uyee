@@ -18,13 +18,18 @@ class Dashboard extends StatefulWidget {
 
 //schafold
 class _DashboardState extends State<Dashboard> {
-  int currentTab = 0;
-  void onTap(int index) {
-    setState(() {
-      currentTab = index;
-      // currentScreen = HomePage();
-    });
-  }
+  // static final List<Widget> screen = <Widget>[
+  //   Dashboard(),
+  //   Activity(),
+  //   Pengaturan(),
+  // ];
+  // int currentTab = 0;
+  // void onTap(int index) {
+  //   setState(() {
+  //     currentTab = index;
+  //     // currentScreen = HomePage();
+  //   });
+  // }
 
   int index = 0;
   @override
@@ -49,10 +54,24 @@ class _DashboardState extends State<Dashboard> {
         titleTextStyle: whiteTextStyle3,
         titleSpacing: 14,
         centerTitle: false,
+        leading: Padding(
+          padding: EdgeInsets.all(8),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (context) => Navbar()));
+            },
+            child: Image.asset(
+                width: 3,
+                'assets/potoprofil.png',
+                alignment: Alignment.centerLeft),
+          ),
+        ),
+        automaticallyImplyLeading: false,
 
-        leading: Image.asset(
-            width: 3, 'assets/potoprofil.png', alignment: Alignment.centerLeft),
-        automaticallyImplyLeading: true,
+        // leading: Image.asset(
+        //     width: 3, 'assets/potoprofil.png', alignment: Alignment.centerLeft),
+        // automaticallyImplyLeading: true,
         shadowColor: Color.fromARGB(255, 47, 101, 88),
         backgroundColor: Color.fromARGB(255, 47, 101, 88),
         flexibleSpace: Container(
@@ -369,7 +388,9 @@ class _DashboardState extends State<Dashboard> {
       //           label: "Akun",
       //           icon: Icon(Icons.manage_accounts_outlined),
       //           activeIcon: Icon(Icons.manage_accounts)),
+
       //     ]),
+      // bottomNavigationBar: Navbar(),
     );
   }
 }

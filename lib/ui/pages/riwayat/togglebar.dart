@@ -56,18 +56,17 @@ class _RiwayatState extends State<Riwayat> {
           height: 200,
         ),
         Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/model.png'),
-              ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/model.png'),
             ),
-            child: Text(
-              labels[counter],
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.black),
-            )),
+          ),
+          child: Text(
+            labels[counter],
+            style: TextStyle(
+                fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black),
+          ),
+        ),
       ])),
     );
   }
